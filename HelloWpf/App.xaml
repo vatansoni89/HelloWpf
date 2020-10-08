@@ -3,7 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:HelloWpf"
              StartupUri="MainWindow.xaml">
-    <Application.Resources>
-         
+    <Application.Resources> <!--Application wide resources, Use with StaticResource keyword-->
+        <SolidColorBrush x:Key="numbersColor" Color="#444444"/>
+        <SolidColorBrush x:Key="operatorsColor" Color="Orange"/>
+
+        <Style TargetType="Button"> <!--Implicit Styles Default for all buttons-->
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
     </Application.Resources>
 </Application>
