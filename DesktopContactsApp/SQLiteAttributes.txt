@@ -1,0 +1,11 @@
+﻿
+
+SQLite:
+  Attributes:
+    [Table("Person")] : above class, it will be the table name (over class name).
+    [Column("Familyname")]: above property, it will be the column name (over property name).
+    [PrimaryKey, AutoIncrement]: above property
+    [Indexed]: sort of foreign key in sqlite. (no real f-key in sqlite)
+    [MaxLength(50)]
+    [Unique]
+    [Ignore]: when we want to ignore any prop to be tables's column. 
