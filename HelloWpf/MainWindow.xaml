@@ -25,30 +25,30 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Label Content="0" x:Name="resultLabel" Grid.ColumnSpan="4" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="60"/>
-        <Button x:Name="btnAC" Grid.Row="1" Content="AC" Margin="5"/>
-        <Button x:Name="btnMultNegative" Grid.Row="1" Grid.Column="1" Content="+/-" Margin="5"/>
-        <Button Grid.Row="1" Grid.Column="2" Content="%" Margin="5"/>
-        <Button Grid.Row="1" Grid.Column="3" Content="/" Margin="5" Background="{StaticResource operatorsColor}"/>
-        <Button Grid.Row="2" Content="7" x:Name="btnSeven" Margin="5" Click="BtnNumber_Click" Background="{StaticResource numbersColor}"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="8" Margin="5" Click="BtnNumber_Click" Background="{StaticResource numbersColor}"/>
-        <Button Grid.Row="2" Grid.Column="2" Content="9" Margin="5" Click="BtnNumber_Click" Background="{StaticResource numbersColor}" Foreground="Blue"/>
-        <Button Grid.Row="2" Grid.Column="3" Content="*" Margin="5" Background="{StaticResource operatorsColor}"/>
-        <Button Grid.Row="3" Content="4" Margin="5" Click="BtnNumber_Click" Background="{StaticResource numbersColor}"/>
-        <Button Grid.Row="3" Grid.Column="1" Content="5" Margin="5" Click="BtnNumber_Click" Background="{StaticResource numbersColor}"/>
-        <Button Grid.Row="3" Grid.Column="2" Content="6" Margin="5" Click="BtnNumber_Click" Background="{StaticResource numbersColor}"/>
-        <Button Grid.Row="3" Grid.Column="3" Content="-" Margin="5" Click="OperationBtn_Click" Background="{StaticResource operatorsColor}"/>
-        <Button Grid.Row="4" Content="1" Margin="5" Click="BtnNumber_Click" Background="{StaticResource numbersColor}"/>
-        <Button Grid.Row="4" Grid.Column="1" Content="2" Margin="5" Click="BtnNumber_Click" Background="{StaticResource numbersColor}"/>
-        <Button Grid.Row="4" Grid.Column="2" Content="3" Margin="5" Click="BtnNumber_Click" Background="{StaticResource numbersColor}"/>
-        <Button x:Name="BtnAdd" Grid.Row="4" Grid.Column="3" Content="+" Margin="5" Click="OperationBtn_Click" Background="{StaticResource operatorsColor}"/>
-        <Button Grid.Row="5" Grid.ColumnSpan="2" Content="0" Margin="5" Click="BtnNumber_Click" Background="{StaticResource numbersColor}"/>
-        <Button Grid.Row="5" Grid.Column="2" Content="." Margin="5" Background="{StaticResource numbersColor}"/>
-        <Button x:Name="BtnEquals" Grid.Row="5" Grid.Column="3" Content="=" Margin="5" Click="BtnEquals_Click" Background="{StaticResource operatorsColor}"/>
+        <Button x:Name="btnAC" Grid.Row="1" Content="AC" Style="{StaticResource operatorsButtonStyle}"/>
+        <Button x:Name="btnMultNegative" Grid.Row="1" Grid.Column="1" Content="+/-" Style="{StaticResource operatorsButtonStyle}"/>
+        <Button Grid.Row="1" Grid.Column="2" Content="%" Style="{StaticResource operatorsButtonStyle}"/>
+        <Button Grid.Row="1" Grid.Column="3" Content="/"  Style="{StaticResource operatorsButtonStyle}"/>
+        <Button Grid.Row="2" Content="7" x:Name="btnSeven"  Click="BtnNumber_Click" Style="{StaticResource numberButtonsStyle}"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="8"  Click="BtnNumber_Click" Style="{StaticResource numberButtonsStyle}"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="9"  Click="BtnNumber_Click"  Foreground="Blue" Style="{StaticResource numberButtonsStyle}"/>
+        <Button Grid.Row="2" Grid.Column="3" Content="*"  Style="{StaticResource operatorsButtonStyle}"/>
+        <Button Grid.Row="3" Content="4"  Click="BtnNumber_Click" Style="{StaticResource numberButtonsStyle}"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="5"  Click="BtnNumber_Click" Style="{StaticResource numberButtonsStyle}"/>
+        <Button Grid.Row="3" Grid.Column="2" Content="6"  Click="BtnNumber_Click" Style="{StaticResource numberButtonsStyle}"/>
+        <Button Grid.Row="3" Grid.Column="3" Content="-"  Click="OperationBtn_Click" Style="{StaticResource operatorsButtonStyle}"/>
+        <Button Grid.Row="4" Content="1"  Click="BtnNumber_Click" Style="{StaticResource numberButtonsStyle}"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="2"  Click="BtnNumber_Click" Style="{StaticResource numberButtonsStyle}"/>
+        <Button Grid.Row="4" Grid.Column="2" Content="3"  Click="BtnNumber_Click" Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="BtnAdd" Grid.Row="4" Grid.Column="3" Content="+"  Click="OperationBtn_Click" Style="{StaticResource operatorsButtonStyle}"/>
+        <Button Grid.Row="5" Grid.ColumnSpan="2" Content="0"  Click="BtnNumber_Click" Style="{StaticResource numberButtonsStyle}"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="."  Style="{StaticResource operatorsButtonStyle}"/>
+        <Button x:Name="BtnEquals" Grid.Row="5" Grid.Column="3" Content="="  Click="BtnEquals_Click" Style="{StaticResource operatorsButtonStyle}"/>
     </Grid>
 </Window>
 
-    
-    <!--
+
+<!--
     Auto: expand as req
     *: full length
     
