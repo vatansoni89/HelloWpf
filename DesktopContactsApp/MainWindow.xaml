@@ -8,6 +8,16 @@
         Title="MainWindow" Height="450" Width="800">
     <StackPanel Margin="10">
         <Button Content="New contact" Click="Button_Click" />
-        <ListView x:Name="contactListView" Margin="5,0,0,0"/>
+        <ListView x:Name="contactListView"  Margin="5,0,0,0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="0,2,0,2">
+                        <TextBlock Text="{Binding Name}" FontSize="20" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Email}" FontSize="20" Foreground="DodgerBlue"/>
+                        <TextBlock Text="{Binding Phone}" FontSize="20" FontStyle="Italic"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackPanel>
 </Window>

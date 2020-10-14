@@ -9,3 +9,17 @@ SQLite:
     [MaxLength(50)]
     [Unique]
     [Ignore]: when we want to ignore any prop to be tables's column. 
+  Binding:
+    Path
+    Mode:
+      1 way (c# to xaml)
+      2 way
+      1 way to source (xaml to c#)
+  ListView Fashion1:
+    ListView
+      ListView.ItemTemplate
+        DataTemplate
+          StackPanel
+  
+      
+  
