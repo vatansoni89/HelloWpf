@@ -17,7 +17,7 @@ namespace DesktopContactsApp.Classes
 
         public override string ToString()
         {
-            return $"{Id}-{Name}-{Email}-{Phone}";
+            return base.ToString();
         }
     }
 }

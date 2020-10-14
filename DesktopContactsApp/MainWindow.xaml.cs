@@ -67,5 +67,21 @@ namespace DesktopContactsApp
             var filteredList = contacts.Where(x=>x.Name.ToLower().Contains(searchTextBox.Text.ToLower())).OrderBy(x=>x.Name).ToList();
             contactListView.ItemsSource = filteredList;
         }
+
+        private void contactListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var contact =  contactListView.SelectedItem as Contact;
+
+            /*We need to check null here as when we update any list member, then 
+            SelectionChanged event occurs but SelectedItem is null in this case.
+            */
+            if (contact != null)
+            {
+                ContactDetailsWindow contactDetailsWindow = new ContactDetailsWindow(contact);
+                contactDetailsWindow.ShowDialog();
+                ReadDatabase();
+            }
+            
+        }
     }
 }
