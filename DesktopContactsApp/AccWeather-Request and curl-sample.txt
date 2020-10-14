@@ -1,0 +1,32 @@
+﻿GET /locations/v1/cities/autocomplete?apikey=vlluVvUY0B31SVHCkHq2i6ANhFe9nXvF&q=aga&language=en-us HTTP/1.1
+Accept:
+*/*
+Accept-Encoding:
+gzip
+Accept-Language:
+en-US
+Host:
+dataservice.accuweather.com
+sec-ch-ua:
+Chromium";v="86
+sec-ch-ua-mobile:
+?0
+Sec-Fetch-Dest:
+empty
+Sec-Fetch-Mode:
+cors
+Sec-Fetch-Site:
+cross-site
+User-Agent:
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
+X-Forwarded-For:
+49.37.160.66
+X-Forwarded-Port:
+443
+X-Forwarded-Proto:
+https
+
+-----------------------------------------------------------------------------------
+
+curl -X GET "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=vlluVvUY0B31SVHCkHq2i6ANhFe9nXvF&q=aga&language=en-us"
+curl -X GET "http://dataservice.accuweather.com/currentconditions/v1/265318?apikey=vlluVvUY0B31SVHCkHq2i6ANhFe9nXvF"

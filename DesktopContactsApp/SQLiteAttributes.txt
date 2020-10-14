@@ -1,6 +1,7 @@
 ﻿
 
 SQLite:
+  API-Key: vlluVvUY0B31SVHCkHq2i6ANhFe9nXvF
   Attributes:
     [Table("Person")] : above class, it will be the table name (over class name).
     [Column("Familyname")]: above property, it will be the column name (over property name).
