@@ -8,5 +8,6 @@
         Title="MainWindow" Height="450" Width="800">
     <StackPanel Margin="10">
         <Button Content="New contact" Click="Button_Click" />
+        <ListView x:Name="contactListView" Margin="5,0,0,0"/>
     </StackPanel>
 </Window>
