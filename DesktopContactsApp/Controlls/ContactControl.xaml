@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="DesktopContactsApp.Controlls.ContactControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DesktopContactsApp.Controlls"
+             mc:Ignorable="d" 
+             d:DesignHeight="90" d:DesignWidth="300">
+    <Grid>
+        <StackPanel Margin="5" Background="Aqua">
+            <TextBlock x:Name="nameTextBox"  Text="{Binding Name}" FontSize="20" FontWeight="Bold"/>
+            <TextBlock x:Name="emailTextBox" Text="{Binding Email}" FontSize="20" Foreground="DodgerBlue"/>
+            <TextBlock x:Name="phoneTextBox" Text="{Binding Phone}" FontSize="20" FontStyle="Italic"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
